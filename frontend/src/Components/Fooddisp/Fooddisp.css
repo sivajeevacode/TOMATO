@@ -1,0 +1,22 @@
+.fooddisp {
+    margin: 20px auto;
+
+}
+
+.fooddisp h1 {
+    padding-bottom: 10px;
+}
+
+.fooddisp .food-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    row-gap: 50px;
+}
+
+@media (max-width:600px) {
+    .fooddisp h1 {
+        font-size: 25px;
+    }
+}

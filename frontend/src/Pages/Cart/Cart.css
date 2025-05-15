@@ -1,0 +1,157 @@
+.cart
+{
+    margin-top: 100px;
+}
+
+.cart .cart-top .cart-title
+{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    gap: 20px;
+    text-align: start;
+}
+.cart-title img
+{
+    width: 60px;
+    border-radius: 3px;
+}
+.list
+{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.list p
+{
+    font-weight: bold;
+}
+.list .cross
+{
+    cursor: pointer;
+}
+
+.cart .cart-bottom
+{
+   margin-top: 100px;
+   display: flex;
+   align-items: start;
+   justify-content: space-between;
+  
+}
+
+
+.left .det .pay
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    padding: 10px 0;
+}
+.total
+{
+    font-weight: bold;
+}
+
+.left button
+{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: tomato;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+}
+hr
+{
+    border: none;
+    height: 2px;
+    background-color:#d2d2d2;
+}
+
+.cart-bottom .right
+{
+    width: 45%;
+}
+
+.right .input
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    background-color: #d2d2d2;
+    border-radius: 5px;
+}
+.input input
+{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 15px 10px;
+    background-color:transparent;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.input button
+{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    width: 25%;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+}
+
+@media (max-width:600px) {
+    .cart-bottom
+    {
+        flex-direction: column-reverse;
+    }
+    .cart-bottom .right
+{
+    width: 100%;
+}
+
+.right 
+{
+    justify-content: start;
+    margin-bottom: 30px;
+}
+.left .det .pay
+{
+    
+    width:320px;
+    
+}
+.cart-title img
+{
+    width: 30px;
+    border-radius: 3px;
+}
+
+.list p
+{
+    font-weight:normal;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.title p
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+}

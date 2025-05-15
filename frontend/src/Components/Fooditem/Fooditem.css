@@ -1,0 +1,83 @@
+.fooditem {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00000015;
+    transition: 0.3s;
+    animation: fadein 3s;
+    transition: 0.3s ease;
+}
+.fooditem:hover
+{
+    transform: scale(1.05);
+}
+
+.fooditem .image img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.food-info {
+    padding: 10px;
+}
+
+.food-info .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.rating .food-name {
+    font-weight: bold;
+
+}
+
+.rating .star {
+    width: 65px;
+}
+
+.food-info .des {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.food-info .price {
+    font-size: 20px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.fooditem .image {
+    position: relative;
+    width: 100%;
+}
+
+.fooditem .image .plus {
+    width: 35px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fooditem .image .counter {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 6px;
+}
+
+.fooditem .image .counter img {
+    width: 30px;
+    cursor: pointer;
+}
+.fooditem .image .plus:hover
+{
+    border: 3px solid tomato;
+}

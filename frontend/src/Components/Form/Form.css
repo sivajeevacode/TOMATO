@@ -1,0 +1,95 @@
+.form
+{
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    z-index: 1;
+    position: absolute;
+    display: grid;
+    place-items: center;
+}
+.form .box
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+    height: fit-content;
+    padding: 15px 20px;
+    border-radius: 10px;
+    animation: fadein 0.3s;
+}
+
+.box .title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.title h2
+{
+    font-size: 22px;
+}
+.title img
+{
+    width: 15px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+
+.box .inputs
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.box .inputs input
+{
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-left: 8px;
+    border: 1px solid #999;
+}
+
+.box .submit
+{
+    border: none;
+    outline: none;
+    background-color: tomato;
+    color: #fff;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.box .conditions
+{
+    display: flex;
+    align-items: start;
+    margin-top: 10px;
+}
+.conditions p
+{
+    font-size: 13px;
+    padding-left: 5px;
+    
+}
+.box .last
+{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.box .last span
+{
+    color:tomato;
+    cursor: pointer;
+}

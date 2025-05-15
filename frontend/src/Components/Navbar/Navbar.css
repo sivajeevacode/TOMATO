@@ -1,0 +1,149 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar .links a {
+    font-weight: 600;
+    cursor: pointer;
+    color:black ;
+}
+
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-right .search {
+    cursor: pointer;
+}
+
+.nav-right .cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon .dot {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: tomato;
+    right: -7px;
+    top: 0px;
+}
+
+.nav-right button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 1px solid #222;
+    background: transparent;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+button a{
+    color: #505050;
+}
+
+.nav-right button:hover
+{
+    background-color: rgb(248, 145, 127);
+}
+
+a.active {
+    border-bottom: 2px solid #333;
+    padding-bottom: 1px;
+}
+
+.profile-box 
+{
+    position:relative;
+
+}
+
+.profile-box .drop
+{
+  position: absolute;
+  z-index:1;
+  right: 0;
+  background-color:#fff2ef ;
+  border-radius: 5px;
+  display: none;
+  border:2px solid tomato;
+  outline:2px solid #fff;
+ 
+}
+.profile-box .profile
+{
+  cursor: pointer;
+}
+.drop li 
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+.drop li img
+{
+    width: 20px;
+}
+.profile-box:hover .drop
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.drop li:hover
+{
+   color: tomato;
+}
+
+
+@media (max-width:600px) {
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .nav-right {
+
+        gap: 20px;
+    }
+
+    .nav-right button {
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .nav-right .search {
+        width: 22px;
+    }
+
+    .nav-right .cart-icon img {
+        width: 25px;
+    }
+
+    .profile-box .profile
+    {
+        width: 22px;
+    }
+}

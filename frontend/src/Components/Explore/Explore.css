@@ -1,0 +1,53 @@
+.explore {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.explore .explore-content {
+    width: 70%;
+}
+
+.explore-content h1 {
+    padding-bottom: 10px;
+}
+
+.explore .foods {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0;
+    overflow-x: scroll;
+
+}
+
+.foods::-webkit-scrollbar {
+    display: none;
+}
+
+.explore .foods img {
+    width: 100px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.explore .foods img.active {
+    border: 4px solid tomato;
+    padding: 2px;
+}
+
+.explore hr {
+    margin: 10px 0;
+    border: none;
+    height: 2px;
+    background-color: #e2e2e2;
+}
+
+@media (max-width:600px) {
+    .explore .explore-content {
+        width: 100%;
+    }
+}

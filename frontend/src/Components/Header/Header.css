@@ -1,0 +1,72 @@
+.header
+{
+    height: 34vw;
+    background: url("/header_img.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 30px auto;
+}
+.header .content
+{
+    position: absolute;
+    width: 60%;
+    bottom: 15%;
+    left: 8%;
+    color: #fff;
+    animation: fadein 3s;
+    
+}
+
+.header .content h1
+{
+   font-size: 60px;
+   padding: 10px 0;
+}
+.header .content p
+{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.header .content button
+{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media (max-width:600px) {
+   .content p
+   {
+    display: none;
+   }
+   .header .content h1
+{
+   font-size: 20px;
+   padding: 10px 0;
+}
+.header 
+{
+    height: 50vw;
+    margin: 10px auto;
+}
+.header .content button
+{
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-left: 0;
+}
+
+.header .content
+{
+    width: 100%;
+    top: 8%;
+    left: 8%;
+    
+}
+}
