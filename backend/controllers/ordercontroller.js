@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 //place order
 const placeorder = async (req, res) => {
 
-    const frontend_url = "http://localhost:5174"; //for stripe session
+    const frontend_url = "https://tomato-frontend-6647.onrender.com"; //for stripe session
 
     try {
 
