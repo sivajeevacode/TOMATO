@@ -9,7 +9,7 @@ const List = () => {
   const [list,setList] = useState([]);
 
   const foodlist = async()=>{
-    const response = await axios.get('http://localhost:4000/api/food/list')
+    const response = await axios.get('https://tomato-backend-q8yo.onrender.com/api/food/list')
     // console.log(response.data)
     if(response.data.success)
     {
@@ -27,7 +27,7 @@ const List = () => {
 
   //remove the food list
   const remove =  async(itemid)=>{
-     const response = await axios.post('http://localhost:4000/api/food/remove',{id:itemid})
+     const response = await axios.post('https://tomato-backend-q8yo.onrender.com/api/food/remove',{id:itemid})
 
      if(response.data.success)
      {
