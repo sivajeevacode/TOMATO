@@ -1,0 +1,44 @@
+.sidebar
+{
+    width: 18%;
+    border: 2px solid grey;
+    border-top: none;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar .boxes
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 25%;
+    gap: 30px;
+}
+
+
+.boxes .box
+{
+    display: flex;
+    gap: 15px;
+    border: 2px solid grey;
+    border-right: none;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+    color: black;
+}
+
+.box.active
+{
+    border-color: tomato;
+    background-color: rgb(252, 189, 178);
+}
+@media (max-width:600px) {
+    .sidebar .boxes p
+    {
+        display: none;
+    }
+}

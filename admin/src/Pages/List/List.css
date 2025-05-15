@@ -1,0 +1,48 @@
+.list {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.list .head {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list .food-list {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 2px solid #cacaca;
+    font-size: 16px;
+}
+
+.food-list.title {
+    background-color: #f9f9f9;
+}
+
+.food-list img {
+    width: 60px;
+}
+
+.food-list .remove {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+
+    .list .food-list {
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 15px;
+        border: 1px solid #cacaca;
+        font-size: 16px;
+    }
+
+    .food-list.title {
+        display: none;
+    }
+
+}
