@@ -10,7 +10,7 @@ import { toast } from 'react-toastify'
 
 const Order = () => {
 
-  const url = 'http://localhost:4000';
+  const url = 'https://tomato-backend-q8yo.onrender.com';
 
   const [order, setOrder] = useState([]);
 
