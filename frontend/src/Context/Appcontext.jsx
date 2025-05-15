@@ -17,7 +17,7 @@ const Contextprovider = (props) => {
   }
 
   //form logics
-  const url = 'http://localhost:4000'
+  const url = 'https://tomato-backend-q8yo.onrender.com'
   const [token, setToken] = useState('');
   
 
