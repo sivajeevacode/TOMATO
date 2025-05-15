@@ -41,7 +41,7 @@ const Add = () => {
     formdata.append('category', data.category)
     formdata.append('image', image)
 
-    const response = await axios.post('http://localhost:4000/api/food/add', formdata)
+    const response = await axios.post('https://tomato-backend-q8yo.onrender.com/api/food/add', formdata)
     if (response.data.success) {
       setData({
         name: '',
